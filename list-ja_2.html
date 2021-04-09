@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>音響から楽譜へのピアノ採譜</title>
+
+    <style>
+      ul.pub {line-height: 20px;}
+      ul.pub li {margin-bottom: 10px;}
+      ol.multi-column {float: left; width: 100%; line-height: 10px;}
+      ol.multi-column li {float: left; width: 50%; margin-bottom: 10px;}
+
+      .example2 li {
+      display: inline;
+      padding:10px 15px;
+      border:1px #ccc solid;color:#000053;
+      border-radius: 5px / 5px;
+      }
+      .example2 .this {background-color:#777;color:#fff;}
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer" style="height: 130px;">
+        <header class="inner">
+          <h1><a href="https://audio2score.github.io/index-ja.html"><font color="#ffffff">音響から楽譜へのピアノ採譜</font></a>　　　<a href="https://audio2score.github.io"><font color="#ffffff" size="5">To English</font></a></h1>
+          <div style="text-align:right;"><a href="https://eita-nakamura.github.io/index-ja.html" target="_blank"><font color="#ffffff"><strong>中村栄太</strong>（京都大学白眉センター/情報学研究科）</a></font>　
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+             <a href="https://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-counter" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+          </div>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+
+    <div id="main_content_wrap" class="outer">
+
+      <section id="main_content" class="inner">
+
+        <div style="margin:auto;padding:0px;text-align:center;">
+        <h4><a href="https://audio2score.github.io/index-ja.html"><font color="#00205B"><strong>メインページに戻る</strong></font></a></h4>
+        </div>
+
+    <div style="height:10px;"></div>
+
+        <h3>自動採譜の例</h3>
+
+下の例はPOVNet+RQ+NL法により生成されたものです。
+
+      <div style="height:20px;"></div>
+
+      <div style="margin:auto;padding:10px;text-align:center;border: 1px solid rgb(0,0,0); width:700px;background-color:rgba(100,100,100,0.1);">
+      <strong>採譜結果に関するアンケートへのご協力のお願い</strong><br>
+      （採譜のリクエストも受け付けております）<br>
+<strong><a href="https://forms.gle/SGDh7eJzVRvtHki38" target="_blank">回答フォーム</a></strong><br>
+      </div>
+
+      <div style="height:40px;"></div>
+
+      <div style="margin:auto;padding:0px;text-align:center;width:700px;">
+        <ul class="example2">
+        <li><a href="https://audio2score.github.io/list-ja_1.html">前へ</a></li>
+        <li><a href="https://audio2score.github.io/list-ja_1.html">1</a></li>
+        <li class="this">2</li>
+        <li><a href="https://audio2score.github.io/list-ja_3.html">3</a></li>
+        <li><a href="https://audio2score.github.io/list-ja_3.html">次へ</a></li>
+        </ul>
+      </div>
+
+      <div style="height:20px;"></div>
+
+
+<h4><font color="#000000">例 21　　鬼滅の刃メドレー (カバー：よみぃ)</font></h4>
+<div style="position: relative; width:600px; height:240px; top:0px; left:0px; margin:0px; padding:0px;">
+  <div style="position:absolute; top:0px; left:10px; width: 180px;"><font color="#941651">入力音響</font></div>
+
+  <a style="position:absolute; top:30px; left:10px;"href="https://www.youtube.com/watch?v=hwrhmVU0YSE" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/hwrhmVU0YSE.jpg" width="280px" height="158px" alt="YouTubeリンク">
+  </a>
+
+  <div style="position:absolute; top:0px; left:360px; width: 180px;"><font color="#941651">推定楽譜</font></div>
+
+  <a style="position:absolute; top:30px; left:360px;"href="https://musescore.com/user/32935009/scores/6675041/s/WtZSIB" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/hwrhmVU0YSE_corr_merge.jpg" height="158px" alt="score">
+  </a>
+</div>
+
+<h4><font color="#000000">例 22　　夜に駆ける (YOASOBI、カバー：ゆゆうた)</font></h4>
+<div style="position: relative; width:600px; height:240px; top:0px; left:0px; margin:0px; padding:0px;">
+  <div style="position:absolute; top:0px; left:10px; width: 180px;"><font color="#941651">入力音響</font></div>
+
+  <a style="position:absolute; top:30px; left:10px;"href="https://www.youtube.com/watch?v=mfh3vlyqb2o" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/mfh3vlyqb2o.jpg" width="280px" height="158px" alt="YouTubeリンク">
+  </a>
+
+  <div style="position:absolute; top:0px; left:360px; width: 180px;"><font color="#941651">推定楽譜</font></div>
+
+  <a style="position:absolute; top:30px; left:360px;"href="https://musescore.com/user/32935009/scores/6675080/s/zKIeHC" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/mfh3vlyqb2o_corr_merge.jpg" height="158px" alt="score">
+  </a>
+</div>
+
+<h4><font color="#000000">例 23　　廻廻奇譚 (Eve、カバー：深根)</font></h4>
+<div style="position: relative; width:600px; height:240px; top:0px; left:0px; margin:0px; padding:0px;">
+  <div style="position:absolute; top:0px; left:10px; width: 180px;"><font color="#941651">入力音響</font></div>
+
+  <a style="position:absolute; top:30px; left:10px;"href="https://www.youtube.com/watch?v=306kvqZ7gtM" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/306kvqZ7gtM.jpg" width="280px" height="158px" alt="YouTubeリンク">
+  </a>
+
+  <div style="position:absolute; top:0px; left:360px; width: 180px;"><font color="#941651">推定楽譜</font></div>
+
+  <a style="position:absolute; top:30px; left:360px;"href="https://musescore.com/user/32935009/scores/6675101/s/aMg5gP" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/306kvqZ7gtM_corr_merge.jpg" height="158px" alt="score">
+  </a>
+</div>
+
+<h4><font color="#000000">例 24　　春を告げる (yama、カバー：岸田勇気)</font></h4>
+<div style="position: relative; width:600px; height:240px; top:0px; left:0px; margin:0px; padding:0px;">
+  <div style="position:absolute; top:0px; left:10px; width: 180px;"><font color="#941651">入力音響</font></div>
+
+  <a style="position:absolute; top:30px; left:10px;"href="https://www.youtube.com/watch?v=2-5X-6yGWro" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/2-5X-6yGWro.jpg" width="280px" height="158px" alt="YouTubeリンク">
+  </a>
+
+  <div style="position:absolute; top:0px; left:360px; width: 180px;"><font color="#941651">推定楽譜</font></div>
+
+  <a style="position:absolute; top:30px; left:360px;"href="https://musescore.com/user/32935009/scores/6675106/s/c4ucIh" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/2-5X-6yGWro_corr_merge.jpg" height="158px" alt="score">
+  </a>
+</div>
+
+<h4><font color="#000000">例 25　　ドライフラワー (優里、カバー：737guam)</font></h4>
+<div style="position: relative; width:600px; height:240px; top:0px; left:0px; margin:0px; padding:0px;">
+  <div style="position:absolute; top:0px; left:10px; width: 180px;"><font color="#941651">入力音響</font></div>
+
+  <a style="position:absolute; top:30px; left:10px;"href="https://www.youtube.com/watch?v=JLMzqSyRfgk" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/JLMzqSyRfgk.jpg" width="280px" height="158px" alt="YouTubeリンク">
+  </a>
+
+  <div style="position:absolute; top:0px; left:360px; width: 180px;"><font color="#941651">推定楽譜</font></div>
+
+  <a style="position:absolute; top:30px; left:360px;"href="https://musescore.com/user/32935009/scores/6675113/s/0OnKEL" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/JLMzqSyRfgk_corr_merge.jpg" height="158px" alt="score">
+  </a>
+</div>
+
+<h4><font color="#000000">例 26　　One Last Kiss (宇多田ヒカル、カバー：RuRu)</font></h4>
+<div style="position: relative; width:600px; height:240px; top:0px; left:0px; margin:0px; padding:0px;">
+  <div style="position:absolute; top:0px; left:10px; width: 180px;"><font color="#941651">入力音響</font></div>
+
+  <a style="position:absolute; top:30px; left:10px;"href="https://www.youtube.com/watch?v=zZYovSgLUJI" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/zZYovSgLUJI.jpg" width="280px" height="158px" alt="YouTubeリンク">
+  </a>
+
+  <div style="position:absolute; top:0px; left:360px; width: 180px;"><font color="#941651">推定楽譜</font></div>
+
+  <a style="position:absolute; top:30px; left:360px;"href="https://musescore.com/user/32935009/scores/6675060/s/Xvya_2" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/zZYovSgLUJI_corr_merge.jpg" height="158px" alt="score">
+  </a>
+</div>
+
+<h4><font color="#000000">例 27　　A Thousand Years (Christina Perri、カバー：Yuval Salomon)</font></h4>
+<div style="position: relative; width:600px; height:240px; top:0px; left:0px; margin:0px; padding:0px;">
+  <div style="position:absolute; top:0px; left:10px; width: 180px;"><font color="#941651">入力音響</font></div>
+
+  <a style="position:absolute; top:30px; left:10px;"href="https://www.youtube.com/watch?v=fQKZZSWS084" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/fQKZZSWS084.jpg" width="280px" height="158px" alt="YouTubeリンク">
+  </a>
+
+  <div style="position:absolute; top:0px; left:360px; width: 180px;"><font color="#941651">推定楽譜</font></div>
+
+  <a style="position:absolute; top:30px; left:360px;"href="https://musescore.com/user/32935009/scores/6678258/s/bD32FT" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/fQKZZSWS084_corr_merge.jpg" height="158px" alt="score">
+  </a>
+</div>
+
+<h4><font color="#000000">例 28　　星を仰ぐ (菅田将暉、カバー：Saori8Piano)</font></h4>
+<div style="position: relative; width:600px; height:240px; top:0px; left:0px; margin:0px; padding:0px;">
+  <div style="position:absolute; top:0px; left:10px; width: 180px;"><font color="#941651">入力音響</font></div>
+
+  <a style="position:absolute; top:30px; left:10px;"href="https://www.youtube.com/watch?v=8OqtuEHdqa0" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/8OqtuEHdqa0.jpg" width="280px" height="158px" alt="YouTubeリンク">
+  </a>
+
+  <div style="position:absolute; top:0px; left:360px; width: 180px;"><font color="#941651">推定楽譜</font></div>
+
+  <a style="position:absolute; top:30px; left:360px;"href="https://musescore.com/user/32935009/scores/6678277/s/qaJ0uf" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/8OqtuEHdqa0_corr_merge.jpg" height="158px" alt="score">
+  </a>
+</div>
+
+<h4><font color="#000000">例 29　　Rusty Nail (X JAPAN、カバー：guukado)</font></h4>
+<div style="position: relative; width:600px; height:240px; top:0px; left:0px; margin:0px; padding:0px;">
+  <div style="position:absolute; top:0px; left:10px; width: 180px;"><font color="#941651">入力音響</font></div>
+
+  <a style="position:absolute; top:30px; left:10px;"href="https://www.youtube.com/watch?v=XmRfW6SJYPw" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/XmRfW6SJYPw.jpg" width="280px" height="158px" alt="YouTubeリンク">
+  </a>
+
+  <div style="position:absolute; top:0px; left:360px; width: 180px;"><font color="#941651">推定楽譜</font></div>
+
+  <a style="position:absolute; top:30px; left:360px;"href="https://musescore.com/user/32935009/scores/6680554/s/TmQzvy" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/XmRfW6SJYPw_corr_merge.jpg" height="158px" alt="score">
+  </a>
+</div>
+
+<h4><font color="#000000">例 30　　旅立ちの日に (坂本浩美、カバー：よみぃ)</font></h4>
+<div style="position: relative; width:600px; height:240px; top:0px; left:0px; margin:0px; padding:0px;">
+  <div style="position:absolute; top:0px; left:10px; width: 180px;"><font color="#941651">入力音響</font></div>
+
+  <a style="position:absolute; top:30px; left:10px;"href="https://www.youtube.com/watch?v=zrb1kDs5Ud0" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/zrb1kDs5Ud0.jpg" width="280px" height="158px" alt="YouTubeリンク">
+  </a>
+
+  <div style="position:absolute; top:0px; left:360px; width: 180px;"><font color="#941651">推定楽譜</font></div>
+
+  <a style="position:absolute; top:30px; left:360px;"href="https://musescore.com/user/32935009/scores/6680562/s/AkOQhd" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/zrb1kDs5Ud0_corr_merge.jpg" height="158px" alt="score">
+  </a>
+</div>
+
+<h4><font color="#000000">例 31　　D's Adventure Note (よみぃ、演奏：ふみ)</font></h4>
+<div style="position: relative; width:600px; height:240px; top:0px; left:0px; margin:0px; padding:0px;">
+  <div style="position:absolute; top:0px; left:10px; width: 180px;"><font color="#941651">入力音響</font></div>
+
+  <a style="position:absolute; top:30px; left:10px;"href="https://www.youtube.com/watch?v=qcteVzkz2bs" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/qcteVzkz2bs.jpg" width="280px" height="158px" alt="YouTubeリンク">
+  </a>
+
+  <div style="position:absolute; top:0px; left:360px; width: 180px;"><font color="#941651">推定楽譜</font></div>
+
+  <a style="position:absolute; top:30px; left:360px;"href="https://musescore.com/user/32935009/scores/6683041/s/93qE0a" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/qcteVzkz2bs_corr_merge.jpg" height="158px" alt="score">
+  </a>
+</div>
+
+<h4><font color="#000000">例 32　　鳥のカタログ第1巻 第2番「キガシラコウライウグイス」 (メシアン、演奏：イヴォンヌ・ロリオ)</font></h4>
+<div style="position: relative; width:600px; height:240px; top:0px; left:0px; margin:0px; padding:0px;">
+  <div style="position:absolute; top:0px; left:10px; width: 180px;"><font color="#941651">入力音響</font></div>
+
+  <a style="position:absolute; top:30px; left:10px;"href="https://www.youtube.com/watch?v=G6Izpdkjrhk&t=645s" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/XAqGGlWiY6Q.jpg" width="280px" height="158px" alt="YouTubeリンク">
+  </a>
+
+  <div style="position:absolute; top:0px; left:360px; width: 180px;"><font color="#941651">推定楽譜</font></div>
+
+  <a style="position:absolute; top:30px; left:360px;"href="https://musescore.com/user/32935009/scores/6683070/s/Ec-ruy" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/XAqGGlWiY6Q_corr_merge.jpg" height="158px" alt="score">
+  </a>
+</div>
+
+<h4><font color="#000000">例 33　　パッヘルベルのカノン (アレンジ：ジョージ・ウィンストン)</font></h4>
+<div style="position: relative; width:600px; height:240px; top:0px; left:0px; margin:0px; padding:0px;">
+  <div style="position:absolute; top:0px; left:10px; width: 180px;"><font color="#941651">入力音響</font></div>
+
+  <a style="position:absolute; top:30px; left:10px;"href="https://www.youtube.com/watch?v=hydo5gJP22o" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/hydo5gJP22o.jpg" width="280px" height="158px" alt="YouTubeリンク">
+  </a>
+
+  <div style="position:absolute; top:0px; left:360px; width: 180px;"><font color="#941651">推定楽譜</font></div>
+
+  <a style="position:absolute; top:30px; left:360px;"href="https://musescore.com/user/32935009/scores/6693435/s/PFz0Np" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/hydo5gJP22o_corr_merge.jpg" height="158px" alt="score">
+  </a>
+</div>
+
+<h4><font color="#000000">例 34　　点描の唄 (Mrs. GREEN APPLE feat. 井上苑子、カバー：ふみ)</font></h4>
+<div style="position: relative; width:600px; height:240px; top:0px; left:0px; margin:0px; padding:0px;">
+  <div style="position:absolute; top:0px; left:10px; width: 180px;"><font color="#941651">入力音響</font></div>
+
+  <a style="position:absolute; top:30px; left:10px;"href="https://www.youtube.com/watch?v=IPee9q4AF5M" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/IPee9q4AF5M.jpg" width="280px" height="158px" alt="YouTubeリンク">
+  </a>
+
+  <div style="position:absolute; top:0px; left:360px; width: 180px;"><font color="#941651">推定楽譜</font></div>
+
+  <a style="position:absolute; top:30px; left:360px;"href="https://musescore.com/user/32935009/scores/6693421/s/rN7KIO" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/IPee9q4AF5M_corr_merge.jpg" height="158px" alt="score">
+  </a>
+</div>
+
+<h4><font color="#000000">例 35　　地球最後の告白を (kemu、カバー：ふみ)</font></h4>
+<div style="position: relative; width:600px; height:240px; top:0px; left:0px; margin:0px; padding:0px;">
+  <div style="position:absolute; top:0px; left:10px; width: 180px;"><font color="#941651">入力音響</font></div>
+
+  <a style="position:absolute; top:30px; left:10px;"href="https://www.youtube.com/watch?v=24JGdnIW8f4" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/24JGdnIW8f4.jpg" width="280px" height="158px" alt="YouTubeリンク">
+  </a>
+
+  <div style="position:absolute; top:0px; left:360px; width: 180px;"><font color="#941651">推定楽譜</font></div>
+
+  <a style="position:absolute; top:30px; left:360px;"href="https://musescore.com/user/32935009/scores/6696604/s/A6hSk9" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/24JGdnIW8f4_corr_merge.jpg" height="158px" alt="score">
+  </a>
+</div>
+
+<h4><font color="#000000">例 36　　紅き大魚の伝説のテーマ曲 (周深、カバー（カリンバ）：April Yang)</font></h4>
+<div style="position: relative; width:600px; height:240px; top:0px; left:0px; margin:0px; padding:0px;">
+  <div style="position:absolute; top:0px; left:10px; width: 180px;"><font color="#941651">入力音響</font></div>
+
+  <a style="position:absolute; top:30px; left:10px;"href="https://www.youtube.com/watch?v=KWQRD55hzGg" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/KWQRD55hzGg.jpg" width="280px" height="158px" alt="YouTubeリンク">
+  </a>
+
+  <div style="position:absolute; top:0px; left:360px; width: 180px;"><font color="#941651">推定楽譜</font></div>
+
+  <a style="position:absolute; top:30px; left:360px;"href="https://musescore.com/user/32935009/scores/6696662/s/L2_OwD" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/KWQRD55hzGg_corr_merge.jpg" height="158px" alt="score">
+  </a>
+</div>
+
+<h4><font color="#000000">例 37　　白日 (King Gnu、カバー：ふみ)</font></h4>
+<div style="position: relative; width:600px; height:240px; top:0px; left:0px; margin:0px; padding:0px;">
+  <div style="position:absolute; top:0px; left:10px; width: 180px;"><font color="#941651">入力音響</font></div>
+
+  <a style="position:absolute; top:30px; left:10px;"href="https://www.youtube.com/watch?v=0UCHef9T1WM" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/0UCHef9T1WM.jpg" width="280px" height="158px" alt="YouTubeリンク">
+  </a>
+
+  <div style="position:absolute; top:0px; left:360px; width: 180px;"><font color="#941651">推定楽譜</font></div>
+
+  <a style="position:absolute; top:30px; left:360px;"href="https://musescore.com/user/32935009/scores/6696653/s/lldRuh" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/0UCHef9T1WM_corr_merge.jpg" height="158px" alt="score">
+  </a>
+</div>
+
+<h4><font color="#000000">例 38　　残酷な天使のテーゼ (高橋洋子、チェンバロ・カバー：Yoshio)</font></h4>
+<div style="position: relative; width:600px; height:240px; top:0px; left:0px; margin:0px; padding:0px;">
+  <div style="position:absolute; top:0px; left:10px; width: 180px;"><font color="#941651">入力音響</font></div>
+
+  <a style="position:absolute; top:30px; left:10px;"href="https://www.youtube.com/watch?v=lj74mO-ZxZA" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/lj74mO-ZxZA.jpg" width="280px" height="158px" alt="YouTubeリンク">
+  </a>
+
+  <div style="position:absolute; top:0px; left:360px; width: 180px;"><font color="#941651">推定楽譜</font></div>
+
+  <a style="position:absolute; top:30px; left:360px;"href="https://musescore.com/user/32935009/scores/6707749/s/KdCOuM" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/lj74mO-ZxZA_corr_merge.jpg" height="158px" alt="score">
+  </a>
+</div>
+
+<h4><font color="#000000">例 39　　花は咲く (菅野よう子、ギター・カバー：村治佳織)</font></h4>
+<div style="position: relative; width:600px; height:240px; top:0px; left:0px; margin:0px; padding:0px;">
+  <div style="position:absolute; top:0px; left:10px; width: 180px;"><font color="#941651">入力音響</font></div>
+
+  <a style="position:absolute; top:30px; left:10px;"href="https://www.youtube.com/watch?v=G4LBVsdNy3c" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/G4LBVsdNy3c.jpg" width="280px" height="158px" alt="YouTubeリンク">
+  </a>
+
+  <div style="position:absolute; top:0px; left:360px; width: 180px;"><font color="#941651">推定楽譜</font></div>
+
+  <a style="position:absolute; top:30px; left:360px;"href="https://musescore.com/user/32935009/scores/6707754/s/WN_Nfw" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/G4LBVsdNy3c_corr_merge.jpg" height="158px" alt="score">
+  </a>
+</div>
+
+<h4><font color="#000000">例 40　　悲愴ソナタ第二楽章 (ベートーベン、演奏：ヴィルヘルム・ケンプ)</font></h4>
+<div style="position: relative; width:600px; height:240px; top:0px; left:0px; margin:0px; padding:0px;">
+  <div style="position:absolute; top:0px; left:10px; width: 180px;"><font color="#941651">入力音響</font></div>
+
+  <a style="position:absolute; top:30px; left:10px;"href="https://www.youtube.com/watch?v=ly1iTD0zB1Y" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/ly1iTD0zB1Y.jpg" width="280px" height="158px" alt="YouTubeリンク">
+  </a>
+
+  <div style="position:absolute; top:0px; left:360px; width: 180px;"><font color="#941651">推定楽譜</font></div>
+
+  <a style="position:absolute; top:30px; left:360px;"href="https://musescore.com/user/32935009/scores/6704178/s/GAkMY9" target="_blank">
+    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/ly1iTD0zB1Y_corr_merge.jpg" height="158px" alt="score">
+  </a>
+</div>
+
+
+      <div style="margin:auto;padding:0px;text-align:center;width:700px;">
+        <ul class="example2">
+        <li><a href="https://audio2score.github.io/list-ja_1.html">前へ</a></li>
+        <li><a href="https://audio2score.github.io/list-ja_1.html">1</a></li>
+        <li class="this">2</li>
+        <li><a href="https://audio2score.github.io/list-ja_3.html">3</a></li>
+        <li><a href="https://audio2score.github.io/list-ja_3.html">次へ</a></li>
+        </ul>
+      </div>
+
+    <div style="height:20px;"></div>
+
+        <div style="margin:auto;padding:0px;text-align:center;">
+        <h4><a href="https://audio2score.github.io/index-ja.html"><font color="#00205B"><strong>メインページに戻る</strong></font></a></h4>
+        </div>
+
+        <h3>連絡先</h3>
+
+問い合わせは、京都大学白眉センター/情報学研究科 <a href="https://eita-nakamura.github.io/index-ja.html" target="_blank"><strong><font color="#00205B">中村栄太</font></strong></a> (eita.nakamura[at]i.kyoto-u.ac[dot]jp) までお願いします。<br>
+その他の<a href="https://eita-nakamura.github.io/index-ja.html" target="_blank"><strong><font color="#00205B">研究紹介や論文情報</font></strong></a>もご覧ください。<br><br>
+
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a href="https://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-counter" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+<br>
+<div class="fb-like" data-href="https://audio2score.github.io/index-ja.html" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="false"></div>
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">
+          Maintained by Eita Nakamura　(最終更新: 2021年4月)　　　<img src="https://www.f-counter.net/j/33/1597950739/">    </p>
+      </footer>
+    </div>
+
+  </body>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v10.0" nonce="BLiMU2iy"></script>
+
+</html>
+
+
+
