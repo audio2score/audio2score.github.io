@@ -22,6 +22,57 @@
       }
       .example2 .this {background-color:#777;color:#fff;}
 
+.msr_newslist01 li {
+  width: 90%;
+  border-bottom: 1px solid #AAAAAA;
+  font-size: 14px;
+  list-style-type: none;
+}
+.msr_newslist01 li a {
+  box-sizing: border-box;
+  color: #000000;
+  display: table;
+  padding: 5px;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  width: 100%;
+}
+.msr_newslist01 li a:hover {
+  background: #EEEEEE;
+  text-decoration: none;
+}
+.msr_newslist01 li div {
+  display: table-cell;
+  width: 70px;
+  vertical-align: middle;
+}
+.msr_newslist01 li p {
+  display: table-cell;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+
+/* 時間の設定 */
+ul.msr_newslist01 li time {
+  display: table-cell;
+  vertical-align: top;
+  width: 90px;
+}
+
+/* カテゴリの設定 */
+.msr_newslist01 li .cat01 {
+  background-color: #143958;
+  border-radius: 1px;
+  color: #FFFFFF;
+  font-size: 9px;
+  padding: 0 2px;
+  text-align: center;
+  width: 50px;
+}
+
     </style>
 
   </head>
@@ -66,6 +117,37 @@ Information Sciences, Vol. 566, pp. 262-280, 2021. <a href="https://arxiv.org/ab
         <br>
         音楽の演奏を聴いて楽譜に書き取る「採譜」は耳コピとも呼ばれ、特殊な訓練をした人だけもつ能力です。特に、複数の音が重なったピアノなどの音楽の採譜は、音高（ピッチ）とリズムの複雑な組み合わせを認識する必要があり、この能力をコンピューターで再現することは長年の間、非常に難しい問題として研究されてきました。本研究では、大量のデータを用いた機械学習による音高の認識手法と、楽譜と演奏動作の中にある統計的性質に基づくリズムの認識手法を統合することで、ピアノ演奏の自動採譜の精度を大幅に向上させ、部分的に演奏に用いることができる楽譜の生成に成功しました。この結果は、音楽学研究や音楽教育への応用、演奏や編曲を支援する実用技術の開発、そして文化を支える知能の科学的理解につながると期待されます。また、芸術文化への情報技術の影響の問題も提起しています。
       </div>
+
+      <div style="height:20px;"></div>
+
+      <h4>報道発表</h4>
+      <ul class="msr_newslist01">
+        <li></li>
+        <li>
+          <a href="https://www.itmedia.co.jp/news/articles/2106/16/news149.html" target="_blank">
+          <div>
+            <time datetime="2021-6-16">2021/06/16</time>
+          </div>
+          <p>本研究成果がITmedia NEWSで紹介されました。</p>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.kyoto-u.ac.jp/ja/research-news/2021-06-15-1" target="_blank">
+          <div>
+            <time datetime="2021-6-9">2021/06/15</time>
+          </div>
+          <p>本研究成果が京都大学HPにて紹介されました。</p>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.itmedia.co.jp/news/articles/2103/17/news062.html" target="_blank">
+          <div>
+            <time datetime="2021-3-17">2021/03/17</time>
+          </div>
+          <p>本研究成果がITmedia NEWSで紹介されました。</p>
+          </a>
+        </li>
+      </ul>
 
       <div style="height:20px;"></div>
 
@@ -318,35 +400,6 @@ Information Sciences, Vol. 566, pp. 262-280, 2021. <a href="https://arxiv.org/ab
   </a>
 </div>
 
-<h4><font color="#000000">例 35　　地球最後の告白を (kemu、カバー：ふみ)</font></h4>
-<div style="position: relative; width:600px; height:240px; top:0px; left:0px; margin:0px; padding:0px;">
-  <div style="position:absolute; top:0px; left:10px; width: 180px;"><font color="#941651">入力音響</font></div>
-
-  <a style="position:absolute; top:30px; left:10px;"href="https://www.youtube.com/watch?v=24JGdnIW8f4" target="_blank">
-    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/24JGdnIW8f4.jpg" width="280px" height="158px" alt="YouTubeリンク">
-  </a>
-
-  <div style="position:absolute; top:0px; left:360px; width: 180px;"><font color="#941651">推定楽譜</font></div>
-
-  <a style="position:absolute; top:30px; left:360px;"href="https://musescore.com/user/32935009/scores/6696604/s/A6hSk9" target="_blank">
-    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/24JGdnIW8f4_corr_merge.jpg" height="158px" alt="score">
-  </a>
-</div>
-
-<h4><font color="#000000">例 34　　点描の唄 (Mrs. GREEN APPLE feat. 井上苑子、カバー：ふみ)</font></h4>
-<div style="position: relative; width:600px; height:240px; top:0px; left:0px; margin:0px; padding:0px;">
-  <div style="position:absolute; top:0px; left:10px; width: 180px;"><font color="#941651">入力音響</font></div>
-
-  <a style="position:absolute; top:30px; left:10px;"href="https://www.youtube.com/watch?v=IPee9q4AF5M" target="_blank">
-    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/IPee9q4AF5M.jpg" width="280px" height="158px" alt="YouTubeリンク">
-  </a>
-
-  <div style="position:absolute; top:0px; left:360px; width: 180px;"><font color="#941651">推定楽譜</font></div>
-
-  <a style="position:absolute; top:30px; left:360px;"href="https://musescore.com/user/32935009/scores/6693421/s/rN7KIO" target="_blank">
-    <img style="margin: 0px 0px 0px 0px;" src="https://audio2score.github.io/image/IPee9q4AF5M_corr_merge.jpg" height="158px" alt="score">
-  </a>
-</div>
 
 
         <div style="margin:auto;padding:0px;text-align:center;">
